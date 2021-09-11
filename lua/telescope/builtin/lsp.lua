@@ -95,6 +95,10 @@ lsp.definitions = function(opts)
   return list_or_jump("textDocument/definition", "LSP Definitions", opts)
 end
 
+lsp.type_definitions = function(opts)
+  return list_or_jump("textDocument/typeDefinition", "LSP Type definitions", opts)
+end
+
 lsp.implementations = function(opts)
   return list_or_jump("textDocument/implementation", "LSP Implementations", opts)
 end
